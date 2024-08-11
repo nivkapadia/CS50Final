@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Index Page</title>
+	<style>
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f5f5f5;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	text-align: center;
+}
+
+h1 {
+	color: #333;
+	margin-bottom: 20px;
+}
+
+p {
+	color: #555;
+	margin-bottom: 15px;
+}
+
+a {
+	background-color: #3f51b5;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+a:hover {
+	background-color: #303f9f;
+}
+</style>
+	
+</head>
+
+<body>
+	<h1>This is an unsecured index page!</h1>
+	<p>This is an unsecured page, but you can access the secured pages after authenticating.</p>
+	<p>Navigate to the secured pages by clicking
+	<a href="/secure" th:href="@{/secure}">here</a>.</p>
+
+</body>
+
+</html>
